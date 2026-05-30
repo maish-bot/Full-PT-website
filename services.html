@@ -34,7 +34,17 @@
       body, p, a, button {
         font-family: 'Poppins', sans-serif;
       }
-    </style>
+
+    @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fadeIn { animation: fadeIn 1s ease-out forwards; }
+</style>
 
 </head>
 
@@ -61,7 +71,7 @@
 
   <div class="max-w-6xl mx-auto px-6 text-center">
   
-    <h2 class="text-4xl font-extrabold mb-16">Our Services</h2>
+    <h2 class="fadeIn text-4xl font-extrabold mb-16">Our Services</h2>
 
         <!-- Card 1: 1-to-1 Coaching -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
