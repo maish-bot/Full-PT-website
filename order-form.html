@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrainerPro - Order Form</title>
+<meta name="description" content="Order your personal trainer website package. Submit your business details, choose a plan, and get started today.">
+<meta name="keywords" content="personal trainer order form, fitness website order, coaching packages, trainer website">
+<meta name="author" content="Maisha Web Studio">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    h1 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+    
+    @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fadeIn { animation: fadeIn 1s ease-out forwards; }
+.fadeInDelay1 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.3s; }
+.fadeInDelay2 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.6s; }
+.fadeInDelay3 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.9s; }
+.fadeInDelay4 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.2s; }
+.fadeInDelay5 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.4s; }
+.fadeInDelay6 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.6s; }
+.fadeInDelay7 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.8s; }
+  </style>
+</head>
+<body class="bg-[#1a1a1a] text-white min-h-screen py-20">
+
+  <div class="max-w-3xl mx-auto bg-gray-900 p-10 rounded-xl shadow-lg fadeIn">
+    <h1 class="text-3xl font-bold text-center mb-8 fadeInDelay1">Order Your Website</h1>
+
+    <form action="https://formspree.io/f/mjgzdynk" method="POST" class="space-y-6">
+
+      <!-- Client Info -->
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded-lg bg-gray-800 text-white fadeInDelay2">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded-lg bg-gray-800 text-white fadeInDelay3">
+      <input type="text" name="business" placeholder="Business Name" required class="w-full p-3 rounded-lg bg-gray-800 text-white fadeInDelay4">
+
+      <!-- Package Selection -->
+      <label class="block text-left font-semibold">Select Package</label>
+      <select name="package" required class="w-full p-3 rounded-lg bg-gray-800 text-white fadeInDelay5">
+        <option>Starter Coaching (£40/session)</option>
+        <option>Transformation Plan (£120/week)</option>
+        <option>Elite Coaching (£220/week)</option>
+      </select>
+
+      <!-- Content Upload -->
+      <textarea name="content" placeholder="Paste text, links to photos/logos, or instructions" class="w-full p-3 rounded-lg bg-gray-800 text-white h-32 fadeInDelay6"></textarea>
+
+      <!-- Submit -->
+      <button type="submit" class="w-full py-3 bg-neon text-black font-bold rounded-lg hover:bg-[#5fff3a] transition fadeInDelay7">
+        Submit Order
+      </button>
+    </form>
+  </div>
+
+</body>
+</html> 
