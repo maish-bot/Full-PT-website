@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal trainer section</title>
+<title>TrainerPro - Personal Trainer Pricing</title>
+<meta name="description" content="Affordable personal trainer packages including starter coaching, transformation plans, and elite coaching.">
+<meta name="keywords" content="personal trainer pricing, coaching packages, fitness plans, transformation plan, elite coaching">
+<meta name="author" content="Maisha Web Studio">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for premium look -->
@@ -34,6 +38,16 @@
       body, p, a, button {
         font-family: 'Poppins', sans-serif;
       }
+ @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fadeIn { animation: fadeIn 1s ease-out forwards; }
+.fadeInDelay1 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.3s; }
+.fadeInDelay2 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.6s; }
+.fadeInDelay3 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.9s; }
+
+        
     </style>
 
 </head>
@@ -63,15 +77,15 @@
 
   <div class="max-w-6xl mx-auto px-6 text-center">
     
-    <h2 class="text-4xl font-extrabold mb-4">Training Packages</h2>
-    <p class="text-gray-400 max-w-xl mx-auto mb-16 text-sm md:text-base">
+    <h2 class=" fadeIn text-4xl font-extrabold mb-4">Training Packages</h2>
+    <p class=" text-gray-400 max-w-xl mx-auto mb-16 text-sm md:text-base">
       Choose the coaching plan that fits your fitness goals and lifestyle.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
       <!-- Basic Coaching -->
-      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border border-gray-800/50">
+      <div class=".fadeInDelay1 bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border border-gray-800/50">
         <div>
           <h3 class="text-xl font-bold text-gray-300 tracking-wide uppercase mb-4">Starter Coaching</h3>
           <div class="flex items-baseline justify-center gap-1 mb-4">
@@ -85,13 +99,13 @@
         
         <div class="mt-8">
           <button class="w-full py-3 px-6 rounded-lg font-semibold bg-gray-800 text-white hover:bg-gray-700 transition border border-gray-700">
-            Select Plan
+            Book Starter Coaching
           </button>
         </div>
       </div>
 
       <!-- Most Popular -->
-      <div class="bg-gray-900 p-10 rounded-xl shadow-2xl hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border-2 border-neon relative">
+      <div class=".fadeInDelay2 bg-gray-900 p-10 rounded-xl shadow-2xl hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border-2 border-neon relative">
         <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-neon text-black font-bold uppercase tracking-widest text-xs px-3 py-1 rounded-full shadow-md">
           Most Popular
         </span>
@@ -109,13 +123,13 @@
         
         <div class="mt-8">
           <button class="w-full py-3 px-6 rounded-lg font-semibold bg-neon text-black hover:bg-[#5fff3a] transition shadow-lg shadow-neon/20">
-            Start Now
+              Start Your Transformation
           </button>
         </div>
       </div>
 
       <!-- Premium Package -->
-      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border border-gray-800/50">
+      <div class=".fadeInDelay3 bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col justify-between text-center min-h-[360px] border border-gray-800/50">
         <div>
           <h3 class="text-xl font-bold text-gray-300 tracking-wide uppercase mb-4">Elite Coaching</h3>
           <div class="flex items-baseline justify-center gap-1 mb-4">
@@ -126,14 +140,23 @@
             Unlimited messaging, 5 weekly sessions, custom meal plan, and full accountability.
           </p>
         </div>
-        
+          Start Your Premium Coashing
         <div class="mt-8">
           <button class="w-full py-3 px-6 rounded-lg font-semibold bg-gray-800 text-white hover:bg-gray-700 transition border border-gray-700">
-            Select Plan
+            
           </button>
         </div>
       </div>
 
     </div>
   </div>
+<div class="text-center mt-12">
+  <a href="https://wa.me/441234567890" 
+     class="px-8 py-4 bg-neon text-black font-bold rounded-lg hover:bg-[#5fff3a] hover:shadow-[0_0_20px_#39ff14] transition">
+     Book Your Coaching Plan
+  </a>
+</div>
+    
+ </body>
 </section>
+</html>
