@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="High-energy fitness website for personal trainers. Showcase services, meal plans, and coaching with modern design.">
+<meta name="keywords" content="personal trainer, fitness coaching, meal plans, online coaching, strength training">
+<meta name="author" content="Maisha Web Studio">
     <title>Personal trainer section</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,16 +37,17 @@
       body, p, a, button {
         font-family: 'Poppins', sans-serif;
       }
-
-    @keyframes fadeIn {
+        
+@keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.animate-fadeIn {
-  animation: fadeIn 1s ease-out forwards;
-}
-
 .fadeIn { animation: fadeIn 1s ease-out forwards; }
+.fadeInDelay1 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.5s; }
+.fadeInDelay2 { animation: fadeIn 1s ease-out forwards; animation-delay: 1s; }
+.fadeInDelay3 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.5s; }
+.fadeInDelay4 { animation: fadeIn 1s ease-out forwards; animation-delay: 2s; }
+
 </style>
 
 </head>
@@ -74,7 +78,7 @@
     <h2 class="fadeIn text-4xl font-extrabold mb-16">Our Services</h2>
 
         <!-- Card 1: 1-to-1 Coaching -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="fadeInDelay1 grid grid-cols-1 md:grid-cols-3 gap-10">
       <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
 
         <div class="flex-1 flex items-center justify-center">
@@ -89,7 +93,7 @@
       </div>
 
        <!-- Card 2: Meal Plans -->
-      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
+      <div class="fadeInDelay2 bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
 
         <div class="flex-1 flex items-center justify-center">
           <svg class="w-24 h-24 drop-shadow-[0_0_15px_#39ff14]" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -105,7 +109,7 @@
       </div>
       
        <!-- Card 3: Online Coaching -->
-      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
+      <div class="fadeInDelay3 bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
 
         <div class="flex-1 flex items-center justify-center">
           <svg class="w-24 h-24 drop-shadow-[0_0_15px_#39ff14]" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -118,7 +122,7 @@
         <p class="text-gray-400 leading-relaxed max-w-[200px]">Train anywhere with expert guidance and accountability.</p>
       </div>
        <!-- Card 4: Strength Training -->
-      <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px] md:col-span-3">
+      <div class="fadeInDelay4 bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px] md:col-span-3">
 
         <div class="flex-1 flex items-center justify-center">
           <svg class="w-28 h-28 drop-shadow-[0_0_15px_#39ff14]" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -133,7 +137,13 @@
       </div>
 
     </div>
-  
+  <div class="text-center mt-12">
+  <a href="https://wa.me/441234567890" 
+     class="px-8 py-4 bg-neon text-black font-bold rounded-lg hover:bg-[#5fff3a] hover:shadow-[0_0_20px_#39ff14] transition">
+     Book a Session on WhatsApp
+  </a>
+</div>
+
 </section>
 </body>
 </html>
